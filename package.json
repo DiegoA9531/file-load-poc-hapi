@@ -1,0 +1,30 @@
+{
+  "name": "hapi-api-boilerplate",
+  "version": "0.0.1",
+  "description": "File Load POF hapi",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "start": "node index.js",
+    "unit-test": "lab -c -r console -o stdout -r lcov -o lcov.info",
+    "test": "npm run lint && npm run unit-test"
+  },
+  "author": "Diego Roman",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "9.1.0",
+    "@hapi/hapi": "20.0.0",
+    "@hapi/joi": "17.1.1",
+    "csv-parser": "^3.0.0",
+    "hapi-pino": "8.3.0",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@hapi/code": "8.0.2",
+    "@hapi/lab": "23.0.0",
+    "blipp": "4.0.1",
+    "codeclimate-test-reporter": "0.5.1",
+    "standard": "14.3.4"
+  }
+}
